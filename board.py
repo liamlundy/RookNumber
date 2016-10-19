@@ -14,6 +14,7 @@ class Row:
 
 class Board:
     def __init__(self, rows, cols):
+        assert rows >= 1 and cols >= 1
         self.rows = [Row(cols) for row in range(0, rows)]
         self.num_cols = cols
         self.num_rows = rows
@@ -22,7 +23,7 @@ class Board:
         self.rows[row].set_cell(col, value)
 
     def get_cell(self, row, col):
-        return self.rows[row][col]
+        return self.rows[row].row[col]
 
     def copy(self):
         return copy.deepcopy(self)
@@ -56,24 +57,3 @@ class RooksBoard(Board):
     def _check_col(self, col):
         col = [row.row[col] for row in self.rows]
         return True not in col
-
-
-if __name__ == "__main__":
-    r = Row(2)
-    print(r)
-    print("+++++++++++++++++++++++")
-    r.set_cell(1, True)
-    print(r)
-    print("+++++++++++++++++++++++")
-    b = Board(3, 3)
-    b1 = RooksBoard(5, 7)
-    print(b)
-    print("+++++++++++++++++++++++")
-    print(b1)
-    b1.set_cell(1, 2, True)
-    print("+++++++++++++++++++++++")
-    print(b1)
-
-    print(b1._check_row(1))
-    print(b1._check_row(2))
-    print(b1._check_col(2))
