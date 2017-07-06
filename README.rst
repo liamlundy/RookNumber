@@ -1,10 +1,10 @@
-|Travis|_ |Coveralls|_
+|Travis|_ |Codecov|_
 
 .. |Travis| image:: https://travis-ci.org/liamlundy/RookNumber.svg?branch=master
 .. _Travis: https://travis-ci.org/liamlundy/RookNumber
 
-.. |Coveralls| image:: https://coveralls.io/repos/github/liamlundy/RookNumber/badge.svg?branch=master
-.. _Coveralls: https://coveralls.io/github/liamlundy/RookNumber?branch=master
+.. |Codecov| image:: https://codecov.io/gh/liamlundy/RookNumber/branch/master/graph/badge.svg
+.. _Codecov: https://codecov.io/gh/liamlundy/RookNumber
 
 A Simulation of the Rook Number Problem
 =======================================
