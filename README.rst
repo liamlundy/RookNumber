@@ -4,6 +4,9 @@ A Simulation of the Rook Number Problem
 .. image:: https://travis-ci.org/liamlundy/RookNumber.svg?branch=master
     :target: https://travis-ci.org/liamlundy/RookNumber
 
+.. image:: https://coveralls.io/repos/github/liamlundy/RookNumber/badge.svg?branch=master
+:target: https://coveralls.io/github/liamlundy/RookNumber?branch=master
+
 A sample project that exists as an aid to the `Python Packaging User Guide
 <https://packaging.python.org>`_'s `Tutorial on Packaging and Distributing
 Projects <https://packaging.python.org/en/latest/distributing.html>`_.
