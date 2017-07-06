@@ -1,9 +1,11 @@
 language: python
 
-install: "pip install ."
+install:
+  - pip install .
+  - pip install coveralls
 
 python:
-  - "3.6"
+  - 3.5
 
 script: coverage run setup.py test
 
