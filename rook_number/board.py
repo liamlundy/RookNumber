@@ -11,6 +11,9 @@ class Row:
     def __str__(self):
         return "|{}|".format("|".join(["x" if cell else " " for cell in self.row]))
 
+    def __eq__(self, other):
+        return all([cell == other_cell for cell, other_cell in zip(self.row, other.row)])
+
 
 class Board:
     def __init__(self, rows, cols):
@@ -30,6 +33,9 @@ class Board:
 
     def __str__(self):
         return "\n".join([str(row) for row in self.rows])
+
+    def __eq__(self, other):
+        return all([row == other_row for row, other_row in zip(self.rows, other.rows)])
 
 
 class RooksBoard(Board):

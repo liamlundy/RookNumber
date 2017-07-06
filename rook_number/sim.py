@@ -34,3 +34,7 @@ class Simulation:
         )
         self.place_in_row(RooksBoard(row_num, col_num), 0)
         print("The Rook Number for a {} x {} board is {}".format(row_num, col_num, self.count))
+
+
+sim = Simulation()
+sim.run(3, 3)
