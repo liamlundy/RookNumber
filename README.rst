@@ -1,5 +1,8 @@
-A sample Python project
-=======================
+A Simulation of the Rook Number Problem
+=======================================
+
+.. image:: https://travis-ci.org/liamlundy/RookNumber.svg?branch=master
+    :target: https://travis-ci.org/liamlundy/RookNumber
 
 A sample project that exists as an aid to the `Python Packaging User Guide
 <https://packaging.python.org>`_'s `Tutorial on Packaging and Distributing
