@@ -2,7 +2,7 @@ language: python
 
 install:
   - pip install .
-  - pip install coveralls
+  - pip install codecov
 
 python:
   - 3.5
@@ -10,4 +10,4 @@ python:
 script: coverage run setup.py test
 
 after_success:
-  coveralls
+  codecov
