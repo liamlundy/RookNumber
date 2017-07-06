@@ -2,7 +2,7 @@ from rook_number.board import RooksBoard
 
 
 class Simulation:
-    def __init__(self, display=True, find_k_rooks=True):
+    def __init__(self, display=False, find_k_rooks=True):
         self.find_k_rooks = find_k_rooks
         self.display = display
         self.count = 0
