@@ -1,4 +1,4 @@
-from board import RooksBoard
+from rook_number.board import RooksBoard
 
 
 class Simulation:
